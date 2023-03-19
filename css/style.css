@@ -1,0 +1,257 @@
+@charset "utf-8"
+
+html {
+    font-size: 100%;
+}
+
+/* .svg {
+    width: 100%;
+} */
+
+.contents_wrapper {
+    /* max-width: 940px; */
+    /* margin: 0 auto;
+    padding: 0 10px; */
+}
+
+/* responsive */
+
+@media(max-width: 600px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .header__logo {
+        width: 60px;
+    }
+
+    /* flex-direction: column; */
+}
+
+ul {
+    list-style: none;
+}
+
+header{
+    background-color: palevioletred;
+    align-items: center;
+    display: flex;
+    margin: 20px 80px;
+
+}
+.header__logo{
+    display: flex
+    
+}
+
+.header__logo svg {
+    width: 200px;
+    height: 50px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+.header__nav--list {
+    width: 300px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.header__bookmarks {
+    background-color: aquamarine;
+    margin-left: auto;
+}
+
+.header__bookmarks--list {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__bookmarks--list svg {
+    background-color: cornflowerblue;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 25px;
+    stroke-width: 1px;
+}
+
+.header__bookmarks--list p {
+    background-color: darkkhaki;
+    font-size: smaller;
+}
+
+main {
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+}
+
+.main__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.main__banner--1 {
+    display: flex;
+    background-color: antiquewhite;
+    /* position: relative; */
+
+} 
+
+.main__buttons {
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+}
+
+.main__buttons--1 {
+    background-image: url('../src/images/arrow.svg');
+    background-position: right;
+    background-size: auto 50%;
+
+}
+
+.main__photo {
+position: absolute;
+top: 0;
+left: 0;
+width: 100vh;
+height: 100vh;
+transform: translateX(0);
+animation: slide 15s ease-in-out infinite;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+    
+
+.main__photo--1 {
+    background-image: url('../src/images/uniqlo_photo58.jpg');
+
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    left: 0;
+}
+
+.main__text {
+    background-color: gra;
+    font-weight: 400;
+    text-shadow: 0 2px 2px #0009;
+    white-space: pre-line;
+    color: #fff;
+    font-family: ヒラギノ角ゴ Pro,Hiragino Kaku Gothic Pro,Hiragino Sans,Noto Sans CJK JP,Osaka,Meiryo,メイリオ,MS PGothic,MS Pゴシック,YuGothic,Yu Gothic,Hiragino Sans GB,Helvetica Neue,HelveticaNeue,Helvetica,Noto Sans,Roboto,Arial,Arial Unicode MS,sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    height: 200px;
+    width: 4000px;
+    line-height: 1.2;
+}
+
+.main__text h1 {
+    font-size: 2.25rem;
+}
+
+.main__text p {
+    font-size: ;
+}
+
+.main__text--1 {
+    /* position: absolute;
+    top: 50%;
+    left: 5%; */
+}
+
+.main__text--2 {
+    /* position: absolute;
+    top: 50%;
+    left: 5%; */
+}
+
+.main__text--2 h2 {
+    font-size: 25px;
+}
+
+.main__text--2 p {
+    /* color: red; */
+    /* font-family: UniqloProRegular,sans-serif; */
+    font-size: 2.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.main__text button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: small;
+}
+
+.main__photo--2 {
+    background-image: url("../src/images/uniqlo_photo56.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    left: 100%;
+}
+
+.main__photo--3 {
+    background-image: url("../src/images/uniqlo_photo55.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    left: 200%;
+}
+
+.main__photo--4 {
+    background-image: url("../src/images/uniqlo_photo57.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    left: 300%;
+}
+
+@keyframes slide {
+    0% {
+    transform: translateX(0);
+    }
+    25% {
+    transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    85% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
